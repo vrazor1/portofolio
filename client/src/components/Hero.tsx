@@ -24,8 +24,15 @@ export default function Hero() {
           className="mb-8"
         >
           <div className="w-32 h-32 rounded-full mx-auto bg-gradient-to-r from-accent-blue to-accent-purple p-1 shadow-2xl">
-            <div className="w-full h-full rounded-full bg-dark-primary flex items-center justify-center">
-              <span className="text-4xl">🤖</span>
+            <div className="w-full h-full rounded-full bg-dark-primary flex items-center justify-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-purple-400/20"></div>
+              <div className="relative z-10 flex items-center justify-center">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" className="text-white">
+                  <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" fill="currentColor" opacity="0.8"/>
+                  <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                  <path d="M12 7V5M12 19V17M17 12H19M5 12H7" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </div>
             </div>
           </div>
         </motion.div>
