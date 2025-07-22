@@ -121,38 +121,26 @@ export default function Projects() {
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-2/3">
                 <div className="grid grid-cols-2 gap-6 mb-6">
-                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
-                    <img 
-                      src={businessAiApp1} 
-                      alt="AI Business Assistant - Login Screen"
-                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
-                  </div>
-                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
-                    <img 
-                      src={businessAiApp2} 
-                      alt="AI Business Assistant - Dashboard"
-                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
-                  </div>
-                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
-                    <img 
-                      src={businessAiApp3} 
-                      alt="AI Business Assistant - Analytics"
-                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
-                  </div>
-                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
-                    <img 
-                      src={businessAiApp4} 
-                      alt="AI Business Assistant - Mobile View"
-                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
-                  </div>
+                  <img 
+                    src={businessAiApp1} 
+                    alt="AI Business Assistant - Login Screen"
+                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
+                  />
+                  <img 
+                    src={businessAiApp2} 
+                    alt="AI Business Assistant - Dashboard"
+                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
+                  />
+                  <img 
+                    src={businessAiApp3} 
+                    alt="AI Business Assistant - Analytics"
+                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
+                  />
+                  <img 
+                    src={businessAiApp4} 
+                    alt="AI Business Assistant - Mobile View"
+                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
+                  />
                 </div>
               </div>
               <div className="lg:w-1/3">

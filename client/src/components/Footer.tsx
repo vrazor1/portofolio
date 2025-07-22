@@ -9,10 +9,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold gradient-text">Loai Aldaghma Portfolio</h3>
             <p className="text-gray-400">Transforming businesses through intelligent automation</p>
           </div>
-          <div className="flex items-center gap-4">
-            <Mail size={16} className="text-blue-400" />
-            <span className="text-gray-300">vloaihd@gmail.com</span>
-          </div>
+          <div></div>
         </div>
         <div className="mt-8 pt-8 border-t border-dark-tertiary text-center text-gray-400">
           <p>&copy; 2024 Loai Aldaghma Portfolio. All rights reserved.</p>
