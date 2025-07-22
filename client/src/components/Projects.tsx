@@ -9,7 +9,7 @@ import businessAiApp1 from "./images/buisnees ai app-1.png";
 import businessAiApp2 from "./images/buisnees ai app-2.png";
 import businessAiApp3 from "./images/buisnees ai app-3.png";
 import businessAiApp4 from "./images/buisnees ai app-4.jpg";
-import robotArmGen3 from "./images/robot arm gen3.png";
+import robotArmGen3 from "./images/k.png";
 import n8nRagAgent from "./images/n8n rag agent photo.png";
 import yoloLogo from "./images/YOLO LOGO.png";
 import n8nLogo from "./images/n8n LOGO.png";
@@ -219,7 +219,7 @@ export default function Projects() {
                               } 
                               alt={`${project.title} Screenshot`}
                               className={`w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ${
-                                project.title.includes("Robot") ? "object-[center_bottom_20%]" : ""
+                                project.title.includes("Robot") ? "object-[center_bottom_40%]" : ""
                               }`}
                             />
                             <div className={`absolute inset-0 bg-gradient-to-t ${project.color === "blue" ? "from-blue-900/50 via-transparent to-transparent" : "from-purple-900/50 via-transparent to-transparent"}`}></div>

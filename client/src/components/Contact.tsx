@@ -203,7 +203,7 @@ export default function Contact() {
 
             <Card className="bg-dark-primary border-gray-600">
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-3">Response Time</h4>
+                <h4 className="font-semibold mb-3 text-[#ffffff]">Response Time</h4>
                 <p className="text-gray-300">
                   I typically respond to project inquiries within 24 hours. For urgent AI consulting needs, please mention "urgent" in your message subject.
                 </p>
