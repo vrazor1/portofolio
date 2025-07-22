@@ -70,7 +70,6 @@ export default function Contact() {
           >
             <Card className="bg-dark-tertiary border-gray-600">
               <CardHeader>
-                <CardTitle className="text-2xl font-bold mb-6">Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
