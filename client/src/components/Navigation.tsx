@@ -29,7 +29,7 @@ export default function Navigation() {
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="font-bold text-xl gradient-text">AI Expert</div>
+          <div className="font-bold text-xl gradient-text">Loai Aldaghma</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

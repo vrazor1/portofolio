@@ -43,7 +43,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl font-bold mb-6 gradient-text"
         >
-          AI Expert & Automation Specialist
+          Loai Aldaghma Portfolio
         </motion.h1>
 
         <motion.p
@@ -67,12 +67,6 @@ export default function Hero() {
             className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             View My Work
-          </Button>
-          <Button
-            variant="outline"
-            className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 bg-transparent"
-          >
-            Download Resume
           </Button>
         </motion.div>
       </div>

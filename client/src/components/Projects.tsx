@@ -9,7 +9,7 @@ import businessAiApp1 from "./images/buisnees ai app-1.png";
 import businessAiApp2 from "./images/buisnees ai app-2.png";
 import businessAiApp3 from "./images/buisnees ai app-3.png";
 import businessAiApp4 from "./images/buisnees ai app-4.jpg";
-import robotArmGen3 from "./images/k.png";
+import robotArmGen3 from "./images/robot arm gen3.png";
 import n8nRagAgent from "./images/n8n rag agent photo.png";
 import yoloLogo from "./images/YOLO LOGO.png";
 import n8nLogo from "./images/n8n LOGO.png";
@@ -119,27 +119,43 @@ export default function Projects() {
             className="bg-gradient-to-r from-dark-secondary to-dark-tertiary p-8 rounded-3xl border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300"
           >
             <div className="flex flex-col lg:flex-row gap-8">
-              <div className="lg:w-1/3">
-                <div className="w-full h-64 rounded-2xl shadow-lg relative overflow-hidden group">
-                  <img 
-                    src={businessAiApp1} 
-                    alt="AI Business Assistant Login Screen"
-                    className="w-full h-full object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent rounded-2xl"></div>
-                  <div className="absolute top-4 right-4 w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <div className="text-white text-sm font-medium drop-shadow-lg">AI Business Assistant</div>
-                    <div className="text-gray-200 text-xs mt-1 drop-shadow">Customer Service & Scheduling</div>
+              <div className="lg:w-1/2">
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                    <img 
+                      src={businessAiApp1} 
+                      alt="AI Business Assistant - Login Screen"
+                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
                   </div>
-                  <div className="absolute bottom-4 right-4 flex gap-1">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '0ms'}}></div>
-                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{animationDelay: '200ms'}}></div>
-                    <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '400ms'}}></div>
+                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                    <img 
+                      src={businessAiApp2} 
+                      alt="AI Business Assistant - Dashboard"
+                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
+                  </div>
+                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                    <img 
+                      src={businessAiApp3} 
+                      alt="AI Business Assistant - Analytics"
+                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
+                  </div>
+                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                    <img 
+                      src={businessAiApp4} 
+                      alt="AI Business Assistant - Mobile View"
+                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
                   </div>
                 </div>
               </div>
-              <div className="lg:w-2/3">
+              <div className="lg:w-1/2">
                 <div className="flex items-center gap-3 mb-4">
                   <Badge className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                     FEATURED
