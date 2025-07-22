@@ -35,7 +35,7 @@ const skills = [
     icon: Code,
     title: "Full-Stack Development",
     description: "React applications, AWS deployment, and data visualization platforms",
-    technologies: ["React", "AWS", "Node.js"],
+    technologies: ["React", "AWS", "Docker", "Node.js"],
     color: "text-blue-400"
   },
   {

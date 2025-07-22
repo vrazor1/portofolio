@@ -59,7 +59,7 @@ const projects = [
       "Integration with multiple data sources including ERP and warehouse systems",
       "Machine learning models for predictive logistics optimization"
     ],
-    technologies: ["RAG", "React", "AWS EC2", "Data Visualization", "Vector Search", "Logistics APIs"],
+    technologies: ["RAG", "React", "AWS EC2", "Docker", "Data Visualization", "Vector Search", "Logistics APIs"],
     color: "blue"
   },
   {
