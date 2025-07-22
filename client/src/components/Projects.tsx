@@ -16,6 +16,7 @@ import n8nLogo from "./images/n8n LOGO.png";
 import huggingFaceLogo from "./images/HUGGING FACE LOGO.png";
 import dockerLogo from "./images/DOCKER LOGO.png";
 import screenshot from "./images/Screenshot-2025-01-08-100219.webp";
+import whisperImage from "./images/whisper.png";
 
 const featuredProject = {
   title: "AI Business App Assistant",
@@ -189,23 +190,46 @@ export default function Projects() {
                   <CardHeader>
                     <div className="mb-6">
                       <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
-                        <img 
-                          src={
-                            project.title.includes("Robot") ? robotArmGen3 : 
-                            project.title.includes("RAG") ? n8nRagAgent :
-                            project.title.includes("Speech") ? screenshot : screenshot
-                          } 
-                          alt={`${project.title} Screenshot`}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        />
-                        <div className={`absolute inset-0 bg-gradient-to-t ${project.color === "blue" ? "from-blue-900/50 via-transparent to-transparent" : "from-purple-900/50 via-transparent to-transparent"}`}></div>
-                        <div className="absolute bottom-3 left-3">
-                          <div className={`text-xs font-medium text-white drop-shadow-lg ${project.color === "blue" ? "text-blue-100" : "text-purple-100"}`}>
-                            {project.title.includes("Robot") ? "Robotics & Unity Simulation" : 
-                             project.title.includes("RAG") ? "Data Analytics & Visualization" :
-                             project.title.includes("Speech") ? "Voice AI & Real-time Processing" : "Automation & Data Pipeline"}
-                          </div>
-                        </div>
+                        {project.title.includes("Data Collection") ? (
+                          // Default design for Data Collection project
+                          <>
+                            <div className={`absolute inset-0 ${project.color === "blue" ? "bg-gradient-to-br from-blue-600/10 to-blue-800/10" : "bg-gradient-to-br from-purple-600/10 to-purple-800/10"}`}></div>
+                            <div className={`absolute inset-0 ${project.color === "blue" ? "bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.2),transparent_70%)]" : "bg-[radial-gradient(circle_at_30%_40%,rgba(147,51,234,0.2),transparent_70%)]"} opacity-60`}></div>
+                            <div className="relative z-10 text-center">
+                              <div className={`w-14 h-14 mx-auto mb-3 ${project.color === "blue" ? "bg-gradient-to-br from-blue-500 to-blue-600" : "bg-gradient-to-br from-purple-500 to-purple-600"} rounded-lg flex items-center justify-center shadow-lg`}>
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-white">
+                                  <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" fill="currentColor" opacity="0.8"/>
+                                  <path d="M14 2V8H20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                  <path d="M16 13H8M16 17H8M10 9H8" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+                                </svg>
+                              </div>
+                              <div className={`text-xs font-medium ${project.color === "blue" ? "text-blue-400" : "text-purple-400"}`}>
+                                Automation & Data Pipeline
+                              </div>
+                            </div>
+                          </>
+                        ) : (
+                          // Image for other projects
+                          <>
+                            <img 
+                              src={
+                                project.title.includes("Robot") ? robotArmGen3 : 
+                                project.title.includes("RAG") ? n8nRagAgent :
+                                project.title.includes("Speech") ? whisperImage : screenshot
+                              } 
+                              alt={`${project.title} Screenshot`}
+                              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                            <div className={`absolute inset-0 bg-gradient-to-t ${project.color === "blue" ? "from-blue-900/50 via-transparent to-transparent" : "from-purple-900/50 via-transparent to-transparent"}`}></div>
+                            <div className="absolute bottom-3 left-3">
+                              <div className={`text-xs font-medium text-white drop-shadow-lg ${project.color === "blue" ? "text-blue-100" : "text-purple-100"}`}>
+                                {project.title.includes("Robot") ? "Robotics & Unity Simulation" : 
+                                 project.title.includes("RAG") ? "Data Analytics & Visualization" :
+                                 project.title.includes("Speech") ? "Voice AI & Real-time Processing" : "Automation & Data Pipeline"}
+                              </div>
+                            </div>
+                          </>
+                        )}
                         <div className="absolute bottom-3 right-3 flex gap-1">
                           {project.color === "blue" ? (
                             <>
