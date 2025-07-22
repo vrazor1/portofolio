@@ -169,7 +169,7 @@ export default function Contact() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Email</h4>
+                    <h4 className="font-semibold text-[#ffff]">Email</h4>
                     <p className="text-gray-300">ai.expert@example.com</p>
                   </div>
                 </CardContent>
