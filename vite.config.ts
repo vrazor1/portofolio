@@ -4,6 +4,7 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
+  base: "/AIExpertPortfolio/", // This is the line you need to add
   plugins: [
     react(),
     runtimeErrorOverlay(),
