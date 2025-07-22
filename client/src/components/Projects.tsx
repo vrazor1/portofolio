@@ -4,6 +4,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
+// Import project images
+import businessAiApp1 from "./images/buisnees ai app-1.png";
+import businessAiApp2 from "./images/buisnees ai app-2.png";
+import businessAiApp3 from "./images/buisnees ai app-3.png";
+import businessAiApp4 from "./images/buisnees ai app-4.jpg";
+import robotArmGen3 from "./images/robot arm gen3.png";
+import n8nRagAgent from "./images/n8n rag agent photo.png";
+import yoloLogo from "./images/YOLO LOGO.png";
+import n8nLogo from "./images/n8n LOGO.png";
+import huggingFaceLogo from "./images/HUGGING FACE LOGO.png";
+import dockerLogo from "./images/DOCKER LOGO.png";
+import screenshot from "./images/Screenshot-2025-01-08-100219.webp";
+
 const featuredProject = {
   title: "AI Business App Assistant",
   description: "Intelligent customer service and appointment scheduling system that automates customer interactions and manages availability-based scheduling with advanced natural language processing.",
@@ -106,23 +119,19 @@ export default function Projects() {
           >
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-1/3">
-                <div className="w-full h-64 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-2xl shadow-lg flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20"></div>
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(120,119,198,0.3),transparent_50%)] opacity-70"></div>
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(59,130,246,0.3),transparent_50%)] opacity-70"></div>
-                  <div className="relative z-10 text-center">
-                    <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-blue-400 to-purple-400 rounded-xl flex items-center justify-center shadow-lg">
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" className="text-white">
-                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2Z" fill="currentColor"/>
-                        <path d="M21 9V7L15 4L13 5V7H11V5L9 4L3 7V9H21Z" fill="currentColor" opacity="0.7"/>
-                        <path d="M3 10V21H21V10H3ZM8 19H5V12H8V19ZM19 19H16V12H19V19ZM14 19H10V12H14V19Z" fill="currentColor"/>
-                      </svg>
-                    </div>
-                    <div className="text-sm text-gray-300 font-medium">AI Business Assistant</div>
-                    <div className="text-xs text-gray-400 mt-1">Customer Service & Scheduling</div>
-                  </div>
+                <div className="w-full h-64 rounded-2xl shadow-lg relative overflow-hidden group">
+                  <img 
+                    src={businessAiApp1} 
+                    alt="AI Business Assistant Login Screen"
+                    className="w-full h-full object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent rounded-2xl"></div>
                   <div className="absolute top-4 right-4 w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg"></div>
-                  <div className="absolute bottom-4 left-4 flex gap-1">
+                  <div className="absolute bottom-4 left-4">
+                    <div className="text-white text-sm font-medium drop-shadow-lg">AI Business Assistant</div>
+                    <div className="text-gray-200 text-xs mt-1 drop-shadow">Customer Service & Scheduling</div>
+                  </div>
+                  <div className="absolute bottom-4 right-4 flex gap-1">
                     <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '0ms'}}></div>
                     <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{animationDelay: '200ms'}}></div>
                     <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{animationDelay: '400ms'}}></div>
@@ -152,8 +161,9 @@ export default function Projects() {
                     <Badge
                       key={tech}
                       variant="secondary"
-                      className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm"
+                      className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-sm flex items-center gap-1.5"
                     >
+                      {tech === "NLP" && <img src={huggingFaceLogo} alt="Hugging Face" className="w-3 h-3" />}
                       {tech}
                     </Badge>
                   ))}
@@ -178,49 +188,19 @@ export default function Projects() {
                 <Card className="bg-dark-secondary hover:bg-dark-tertiary transition-all duration-300 group border-gray-600 h-full">
                   <CardHeader>
                     <div className="mb-6">
-                      <div className="w-full h-48 bg-gradient-to-br from-gray-700/50 to-gray-800/50 rounded-xl shadow-lg flex items-center justify-center relative overflow-hidden">
-                        <div className={`absolute inset-0 ${project.color === "blue" ? "bg-gradient-to-br from-blue-600/10 to-blue-800/10" : "bg-gradient-to-br from-purple-600/10 to-purple-800/10"}`}></div>
-                        <div className={`absolute inset-0 ${project.color === "blue" ? "bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.2),transparent_70%)]" : "bg-[radial-gradient(circle_at_30%_40%,rgba(147,51,234,0.2),transparent_70%)]"} opacity-60`}></div>
-                        <div className="relative z-10 text-center">
-                          <div className={`w-14 h-14 mx-auto mb-3 ${project.color === "blue" ? "bg-gradient-to-br from-blue-500 to-blue-600" : "bg-gradient-to-br from-purple-500 to-purple-600"} rounded-lg flex items-center justify-center shadow-lg`}>
-                            {project.title.includes("Robot") ? (
-                              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-white">
-                                <path d="M12 2L10 4H14L12 2Z" fill="currentColor"/>
-                                <rect x="8" y="4" width="8" height="4" rx="1" fill="currentColor"/>
-                                <rect x="6" y="8" width="12" height="8" rx="2" fill="currentColor" opacity="0.8"/>
-                                <circle cx="10" cy="12" r="1.5" fill="white"/>
-                                <circle cx="14" cy="12" r="1.5" fill="white"/>
-                                <rect x="2" y="10" width="4" height="2" rx="1" fill="currentColor"/>
-                                <rect x="18" y="10" width="4" height="2" rx="1" fill="currentColor"/>
-                                <rect x="10" y="16" width="4" height="6" rx="1" fill="currentColor" opacity="0.6"/>
-                                <circle cx="8" cy="20" r="2" fill="currentColor" opacity="0.8"/>
-                                <circle cx="16" cy="20" r="2" fill="currentColor" opacity="0.8"/>
-                              </svg>
-                            ) : project.title.includes("RAG") ? (
-                              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-white">
-                                <path d="M3 3H21V5H3V3Z" fill="currentColor"/>
-                                <path d="M3 7H21V9H3V7Z" fill="currentColor" opacity="0.7"/>
-                                <path d="M3 11H21V13H3V11Z" fill="currentColor" opacity="0.8"/>
-                                <path d="M3 15H15V17H3V15Z" fill="currentColor" opacity="0.6"/>
-                                <circle cx="18" cy="16" r="3" fill="currentColor"/>
-                                <path d="M3 19H12V21H3V19Z" fill="currentColor" opacity="0.5"/>
-                              </svg>
-                            ) : project.title.includes("Speech") ? (
-                              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-white">
-                                <path d="M12 2C13.1 2 14 2.9 14 4V12C14 13.1 13.1 14 12 14C10.9 14 10 13.1 10 12V4C10 2.9 10.9 2 12 2Z" fill="currentColor"/>
-                                <path d="M17 11V12C17 14.8 14.8 17 12 17C9.2 17 7 14.8 7 12V11H5V12C5 15.9 8.1 19 12 19C15.9 19 19 15.9 19 12V11H17Z" fill="currentColor" opacity="0.7"/>
-                                <path d="M11 20H13V23H11V20Z" fill="currentColor" opacity="0.8"/>
-                                <path d="M8 23H16V21H8V23Z" fill="currentColor" opacity="0.6"/>
-                              </svg>
-                            ) : (
-                              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-white">
-                                <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" fill="currentColor" opacity="0.8"/>
-                                <path d="M14 2V8H20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M16 13H8M16 17H8M10 9H8" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
-                              </svg>
-                            )}
-                          </div>
-                          <div className={`text-xs font-medium ${project.color === "blue" ? "text-blue-400" : "text-purple-400"}`}>
+                      <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                        <img 
+                          src={
+                            project.title.includes("Robot") ? robotArmGen3 : 
+                            project.title.includes("RAG") ? n8nRagAgent :
+                            project.title.includes("Speech") ? screenshot : screenshot
+                          } 
+                          alt={`${project.title} Screenshot`}
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                        <div className={`absolute inset-0 bg-gradient-to-t ${project.color === "blue" ? "from-blue-900/50 via-transparent to-transparent" : "from-purple-900/50 via-transparent to-transparent"}`}></div>
+                        <div className="absolute bottom-3 left-3">
+                          <div className={`text-xs font-medium text-white drop-shadow-lg ${project.color === "blue" ? "text-blue-100" : "text-purple-100"}`}>
                             {project.title.includes("Robot") ? "Robotics & Unity Simulation" : 
                              project.title.includes("RAG") ? "Data Analytics & Visualization" :
                              project.title.includes("Speech") ? "Voice AI & Real-time Processing" : "Automation & Data Pipeline"}
@@ -264,8 +244,12 @@ export default function Projects() {
                         <Badge
                           key={tech}
                           variant="secondary"
-                          className={`${project.color === "blue" ? "bg-blue-500/20 text-blue-400" : "bg-purple-500/20 text-purple-400"} px-3 py-1 rounded-full text-sm`}
+                          className={`${project.color === "blue" ? "bg-blue-500/20 text-blue-400" : "bg-purple-500/20 text-purple-400"} px-3 py-1 rounded-full text-sm flex items-center gap-1.5`}
                         >
+                          {tech === "YOLO v8" && <img src={yoloLogo} alt="YOLO" className="w-3 h-3" />}
+                          {tech === "RAG" && <img src={huggingFaceLogo} alt="RAG" className="w-3 h-3" />}
+                          {tech === "React" && <img src={dockerLogo} alt="Docker" className="w-3 h-3" />}
+                          {(tech === "Python" || tech === "Data Pipelines") && <img src={n8nLogo} alt="n8n" className="w-3 h-3" />}
                           {tech}
                         </Badge>
                       ))}
