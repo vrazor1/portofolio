@@ -9,7 +9,7 @@ import businessAiApp1 from "./images/buisnees ai app-1.png";
 import businessAiApp2 from "./images/buisnees ai app-2.png";
 import businessAiApp3 from "./images/buisnees ai app-3.png";
 import businessAiApp4 from "./images/buisnees ai app-4.jpg";
-import robotArmGen3 from "./images/robot arm gen3.png";
+import robotArmGen3 from "./images/k.png";
 import n8nRagAgent from "./images/n8n rag agent photo.png";
 import yoloLogo from "./images/YOLO LOGO.png";
 import n8nLogo from "./images/n8n LOGO.png";
@@ -120,27 +120,35 @@ export default function Projects() {
           >
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-2/3">
-                <div className="grid grid-cols-2 gap-6 mb-6">
-                  <img 
-                    src={businessAiApp1} 
-                    alt="AI Business Assistant - Login Screen"
-                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
-                  />
-                  <img 
-                    src={businessAiApp2} 
-                    alt="AI Business Assistant - Dashboard"
-                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
-                  />
-                  <img 
-                    src={businessAiApp3} 
-                    alt="AI Business Assistant - Analytics"
-                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
-                  />
-                  <img 
-                    src={businessAiApp4} 
-                    alt="AI Business Assistant - Mobile View"
-                    className="w-full h-80 object-contain transition-transform duration-300 hover:scale-105"
-                  />
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 p-4 rounded-2xl flex items-center justify-center min-h-[280px]">
+                    <img 
+                      src={businessAiApp1} 
+                      alt="AI Business Assistant - Login Screen"
+                      className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105 shadow-2xl rounded-lg"
+                    />
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 p-4 rounded-2xl flex items-center justify-center min-h-[280px]">
+                    <img 
+                      src={businessAiApp2} 
+                      alt="AI Business Assistant - Dashboard"
+                      className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105 shadow-2xl rounded-lg"
+                    />
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 p-4 rounded-2xl flex items-center justify-center min-h-[280px]">
+                    <img 
+                      src={businessAiApp3} 
+                      alt="AI Business Assistant - Analytics"
+                      className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105 shadow-2xl rounded-lg"
+                    />
+                  </div>
+                  <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 p-4 rounded-2xl flex items-center justify-center min-h-[280px]">
+                    <img 
+                      src={businessAiApp4} 
+                      alt="AI Business Assistant - Mobile View"
+                      className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105 shadow-2xl rounded-lg"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="lg:w-1/3">
