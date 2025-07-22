@@ -243,7 +243,7 @@ export default function Projects() {
                         </div>
                       </div>
                     </div>
-                    <CardTitle className={`text-2xl font-bold mb-4 group-hover:${project.color === "blue" ? "text-blue-400" : "text-purple-400"} transition-colors duration-300`}>
+                    <CardTitle className="tracking-tight text-2xl font-bold mb-4 group-hover:text-purple-400 transition-colors duration-300 text-[#ffffff]">
                       {project.title}
                     </CardTitle>
                     <CardDescription className="text-gray-300 mb-4">
