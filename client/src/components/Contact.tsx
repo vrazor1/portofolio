@@ -193,7 +193,7 @@ export default function Contact() {
                     <Github size={24} />
                   </div>
                   <div>
-                    <h4 className="font-semibold">GitHub</h4>
+                    <h4 className="font-semibold text-[#ffff]">GitHub</h4>
                     <p className="text-gray-300">View my open source contributions</p>
                   </div>
                 </CardContent>
