@@ -195,8 +195,8 @@ export default function Projects() {
                           <>
                             <div className={`absolute inset-0 ${project.color === "blue" ? "bg-gradient-to-br from-blue-600/10 to-blue-800/10" : "bg-gradient-to-br from-purple-600/10 to-purple-800/10"}`}></div>
                             <div className={`absolute inset-0 ${project.color === "blue" ? "bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.2),transparent_70%)]" : "bg-[radial-gradient(circle_at_30%_40%,rgba(147,51,234,0.2),transparent_70%)]"} opacity-60`}></div>
-                            <div className="relative z-10 text-center">
-                              <div className={`w-14 h-14 mx-auto mb-3 ${project.color === "blue" ? "bg-gradient-to-br from-blue-500 to-blue-600" : "bg-gradient-to-br from-purple-500 to-purple-600"} rounded-lg flex items-center justify-center shadow-lg`}>
+                            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
+                              <div className={`w-14 h-14 mb-3 ${project.color === "blue" ? "bg-gradient-to-br from-blue-500 to-blue-600" : "bg-gradient-to-br from-purple-500 to-purple-600"} rounded-lg flex items-center justify-center shadow-lg`}>
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-white">
                                   <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" fill="currentColor" opacity="0.8"/>
                                   <path d="M14 2V8H20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
