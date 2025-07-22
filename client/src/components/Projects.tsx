@@ -119,43 +119,43 @@ export default function Projects() {
             className="bg-gradient-to-r from-dark-secondary to-dark-tertiary p-8 rounded-3xl border border-blue-500/20 hover:border-blue-500/40 transition-all duration-300"
           >
             <div className="flex flex-col lg:flex-row gap-8">
-              <div className="lg:w-1/2">
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+              <div className="lg:w-2/3">
+                <div className="grid grid-cols-2 gap-6 mb-6">
+                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
                     <img 
                       src={businessAiApp1} 
                       alt="AI Business Assistant - Login Screen"
-                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
                   </div>
-                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
                     <img 
                       src={businessAiApp2} 
                       alt="AI Business Assistant - Dashboard"
-                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
                   </div>
-                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
                     <img 
                       src={businessAiApp3} 
                       alt="AI Business Assistant - Analytics"
-                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
                   </div>
-                  <div className="w-full h-48 rounded-xl shadow-lg relative overflow-hidden group">
+                  <div className="w-full h-80 rounded-xl shadow-lg relative overflow-hidden group">
                     <img 
                       src={businessAiApp4} 
                       alt="AI Business Assistant - Mobile View"
-                      className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full object-contain bg-gray-900/20 rounded-xl transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent rounded-xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent rounded-xl"></div>
                   </div>
                 </div>
               </div>
-              <div className="lg:w-1/2">
+              <div className="lg:w-1/3">
                 <div className="flex items-center gap-3 mb-4">
                   <Badge className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                     FEATURED
@@ -185,9 +185,7 @@ export default function Projects() {
                     </Badge>
                   ))}
                 </div>
-                <Button className="bg-blue-500 hover:bg-purple-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
-                  View Case Study
-                </Button>
+
               </div>
             </div>
           </motion.div>
