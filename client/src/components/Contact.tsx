@@ -181,7 +181,7 @@ export default function Contact() {
                     <Linkedin size={24} />
                   </div>
                   <div>
-                    <h4 className="font-semibold">LinkedIn</h4>
+                    <h4 className="font-semibold text-[#ffff]">LinkedIn</h4>
                     <p className="text-gray-300">Connect for professional updates</p>
                   </div>
                 </CardContent>
