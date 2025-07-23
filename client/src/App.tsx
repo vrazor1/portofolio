@@ -1,4 +1,5 @@
-import { Switch, Route } from "wouter";
+// 1. Import Router from wouter and give it an alias
+import { Switch, Route, Router as WouterRouter } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -8,10 +9,13 @@ import Home from "@/pages/home";
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
+    // 2. Wrap your Switch in the WouterRouter component with the base path
+    <WouterRouter base="/portofolio">
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+    </WouterRouter>
   );
 }
 
