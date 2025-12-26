@@ -4,45 +4,31 @@ import { Badge } from "@/components/ui/badge";
 
 const skills = [
   {
-    icon: Brain,
-    title: "Machine Learning",
-    description: "TensorFlow model building, data validation, and custom ML pipelines",
-    technologies: ["TensorFlow", "PyTorch", "Scikit-learn"],
+    icon: Code,
+    title: "Full-Stack Development",
+    description: "Scalable React applications, cloud infrastructure, and interactive data platforms.",
+    technologies: ["React", "Node.js", "JavaScript", "Python", "AWS", "Docker"],
     color: "text-blue-400"
   },
   {
-    icon: MessageSquare,
-    title: "Natural Language Processing",
-    description: "Speech-to-text models, text processing, and language understanding",
-    technologies: ["NLTK", "spaCy", "Transformers"],
-    color: "text-purple-400"
+    icon: Brain,
+    title: "Machine Learning",
+    description: "End-to-end ML pipelines, model architecture, and data validation.",
+    technologies: ["TensorFlow", "PyTorch", "Scikit-Learn"],
+    color: "text-blue-400"
   },
   {
     icon: Bot,
     title: "Robotics & Computer Vision",
-    description: "YOLO object detection, Unity simulations, and robotic automation",
-    technologies: ["YOLO", "Unity", "OpenCV"],
+    description: "Real-time object detection, Unity simulations, and robotic automation.",
+    technologies: ["YOLO", "OpenCV", "Unity"],
     color: "text-blue-400"
   },
   {
     icon: Cog,
     title: "Automation & Workflows",
-    description: "Custom n8n automations, data pipelines, and business process optimization",
-    technologies: ["n8n", "Python", "APIs"],
-    color: "text-purple-400"
-  },
-  {
-    icon: Code,
-    title: "Full-Stack Development",
-    description: "React applications, AWS deployment, and data visualization platforms",
-    technologies: ["React", "AWS", "Docker", "Node.js"],
-    color: "text-blue-400"
-  },
-  {
-    icon: Database,
-    title: "Data Engineering",
-    description: "Automated data collection, validation pipelines, and RAG implementations",
-    technologies: ["RAG", "Vector DBs", "ETL"],
+    description: "Custom data pipelines, web scraping, and process optimization.",
+    technologies: ["Python", "JavaScript", "Selenium", "Spyder"],
     color: "text-purple-400"
   }
 ];

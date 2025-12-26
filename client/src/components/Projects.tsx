@@ -96,6 +96,17 @@ const projects = [
     ],
     technologies: ["Neural TTS", "Transformer Models", "Audio Processing", "API"],
     color: "purple"
+  },
+  {
+    title: "Large-Scale Web Scraping",
+    description: "Automated the extraction of 1M+ web pages into structured dataframes for advanced analytics.",
+    features: [
+      "reCAPTCHA & Bot-Detection Bypass including Akamai",
+      "Automated timeout & error handling",
+      "Asynchronous data pipeline architecture"
+    ],
+    technologies: ["Python", "Selenium", "Pandas", "BeautifulSoup", "Scrapy"],
+    color: "text-purple-400"
   }
 ];
 
@@ -129,14 +140,24 @@ export default function Projects() {
             >
               <div className="flex flex-col lg:flex-row gap-8">
                 <div className="lg:w-2/3">
-                  <div className={`grid ${project.images.length === 3 ? 'grid-cols-3' : 'grid-cols-2'} gap-4 mb-6`}>
+                  {/* Increased gap and conditional grid columns for better layout */}
+                  <div className={`grid ${project.images.length === 3 ? 'grid-cols-1 md:grid-cols-3' : 'grid-cols-2'} gap-6 mb-6`}>
                     {project.images.map((img, i) => (
-                      <div key={i} className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 p-4 rounded-2xl flex items-center justify-center min-h-[200px] md:min-h-[280px]">
+                      <div 
+                        key={i} 
+                        className="bg-white/5 rounded-2xl flex items-center justify-center h-[320px] md:h-[450px] overflow-hidden group/img relative border border-white/10"
+                      >
                         <img 
                           src={img} 
                           alt={`${project.title} screenshot ${i + 1}`}
-                          className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-105 shadow-2xl rounded-lg"
+                          className={`w-full h-full transition-transform duration-500 group-hover/img:scale-110 ${
+                            // Use contain for charts to ensure no data is cut off, 
+                            // but use cover for app screenshots if you want them to fill the space
+                            project.title.includes("Rocket") ? "object-contain p-2" : "object-contain p-4"
+                          }`}
                         />
+                        {/* Subtle overlay on hover to make it feel interactive */}
+                        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 pointer-events-none" />
                       </div>
                     ))}
                   </div>
