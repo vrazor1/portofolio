@@ -40,7 +40,6 @@ const featuredProjects = [
     ],
     technologies: ["Gemini", "Automated Workflows", "Firebase", "React", "Expo Go"],
     images: [businessAiApp1, businessAiApp2, businessAiApp3, businessAiApp4],
-    link: "#", // Add link here
     linkText: "View Project"
   },
   {
@@ -55,7 +54,7 @@ const featuredProjects = [
     ],
     technologies: ["Expo Go", "App Store", "Firebase", "Node Js", "React Native"],
     images: [vocab1, vocab2, vocab3, vocab4],
-    link: "INSERT_YOUR_APP_LINK_HERE", // Replace with your link
+    link: "https://apps.apple.com/us/app/vocab-frenzy-language-boost/id6747328745", // Replace with your link
     linkText: "Download App"
   },
   {
@@ -69,7 +68,7 @@ const featuredProjects = [
     ],
     technologies: ["Python", "Algorithms", "ASTOS", "Data Science", "Publication"],
     images: [pub1, pub2, pub3],
-    link: "INSERT_YOUR_PUBLICATION_LINK_HERE", // Replace with your link
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S0094576523003594", // Replace with your link
     linkText: "Read Publication",
     color: "blue"
   }
